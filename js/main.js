@@ -27,12 +27,12 @@ $(function(){
 	});
 
 	// Go To
-	// $('a[href^="#"]').click(function() {
-	// 	$('html,body').animate({
-	// 		scrollTop: $(this.hash).offset().top
-	// 	}, 1000);
-	// 	return false;
-	// });
+	$('a[href^="#"]').on('click', function(){
+		$('html,body').animate({
+			scrollTop: $(this.hash).offset().top
+		}, 1000);
+		return false;
+	});
 
 	/* head focus */
 	var headFocus = new Swiper('.head-focus', {
