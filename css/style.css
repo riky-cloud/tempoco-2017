@@ -713,6 +713,7 @@ main .navigation {
 .popup-ads {
 	opacity: 0;
 	visibility: hidden;
+	position: relative;
 }
 
 .popup-ads.active {
@@ -723,6 +724,7 @@ main .navigation {
 }
 
 .popup-ads button {
+	position: absolute;
 	right: 0;
 	top: -30px;
 	font-size: 20px;
@@ -743,10 +745,14 @@ main .navigation {
 	width: 640px;
 	height: 480px;
 	z-index: 9999;
-	position: fixed;
-	top: 5%;
-	left: 320px;
-	background: rgba(255, 255, 255, 0.5);
+	position:fixed;
+  left: 50%;
+  top: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -moz-transform:translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+   transform: translate(-50%,-50%);
+	/*background: rgba(255, 255, 255, 0.5);*/
 }
 
 .popup-ads a {
